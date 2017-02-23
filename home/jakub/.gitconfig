@@ -1,0 +1,8 @@
+[user]
+	signingkey = E00A944A
+	email = contact@jakubpawlowicz.com
+	name = Jakub Pawlowicz
+[commit]
+	gpgsign = true
+[gpg]
+	program = /run/current-system/sw/bin/gpg2
