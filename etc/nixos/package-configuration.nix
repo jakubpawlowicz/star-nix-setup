@@ -18,4 +18,6 @@
     pkgs.xlsfonts
     pkgs.xorg.xbacklight
   ];
+
+  nixpkgs.config.allowUnfree = true;
 }
