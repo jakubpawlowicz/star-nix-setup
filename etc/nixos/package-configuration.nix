@@ -12,6 +12,7 @@
     pkgs.nodejs
     pkgs.python35Packages.docker_compose
     pkgs.terminus_font
+    pkgs.usbutils
     pkgs.vim
     pkgs.xclip
     pkgs.xlsfonts
