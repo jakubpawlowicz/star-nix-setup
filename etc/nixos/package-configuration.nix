@@ -15,5 +15,6 @@
     pkgs.vim
     pkgs.xclip
     pkgs.xlsfonts
+    pkgs.xorg.xbacklight
   ];
 }
