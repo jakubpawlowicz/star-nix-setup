@@ -6,3 +6,46 @@
 	gpgsign = true
 [gpg]
 	program = /run/current-system/sw/bin/gpg2
+[alias]
+	aa = add --all
+	ai = add --interactive
+	b = branch
+	ba = branch -a
+	c = commit
+	ca = commit --amend
+	cf = !sh -c \"git commit --fixup $@\"
+	co = checkout
+	col = !sh -c \"git checkout -b $@\"
+	cor = !sh -c \"git checkout --track -b $@ origin/$@\"
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	cs = !sh -c \"git commit --squash $@\"
+	d = diff
+	dc = diff --cached
+	ds = diff --stat
+	dsc = diff --stat --cached
+	fpr = !sh -c \"git fetch origin pull/$@/head:$@-pr\"
+	l = log
+	lf = log --follow
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+	m = merge
+	mb = merge-base master HEAD
+	ms = merge --squash
+	pl = pull
+	ps = push
+	psc = !sh -c \"git push --set-upstream origin \\$(git rev-parse --abbrev-ref HEAD)\"
+	psd = !sh -c \"git push origin :\\$(git rev-parse --abbrev-ref HEAD)\"
+	psf = push --force-with-lease
+	r = reset HEAD
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase --interactive --autosquash
+	rbm = rebase --interactive --autosquash origin/master
+	rh = reset --hard
+	rs = reset --soft
+	s = status
+	sh = show
+	shs = show --stat
+	st = stash
