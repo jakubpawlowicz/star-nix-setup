@@ -14,5 +14,6 @@
     pkgs.terminus_font
     pkgs.vim
     pkgs.xclip
+    pkgs.xlsfonts
   ];
 }
