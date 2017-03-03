@@ -12,6 +12,7 @@
     pkgs.mutt
     pkgs.nodejs
     pkgs.python35Packages.docker_compose
+    pkgs.sublime3
     pkgs.terminus_font
     pkgs.usbutils
     pkgs.vim
