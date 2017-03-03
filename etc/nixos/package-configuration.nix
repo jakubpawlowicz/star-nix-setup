@@ -9,6 +9,7 @@
     pkgs.htop
     pkgs.i3
     pkgs.links
+    pkgs.mutt
     pkgs.nodejs
     pkgs.python35Packages.docker_compose
     pkgs.terminus_font
