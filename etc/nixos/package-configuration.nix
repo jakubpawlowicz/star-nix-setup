@@ -14,6 +14,7 @@
     pkgs.python35Packages.docker_compose
     pkgs.sublime3
     pkgs.terminus_font
+    pkgs.unzip
     pkgs.usbutils
     pkgs.vim
     pkgs.xclip
