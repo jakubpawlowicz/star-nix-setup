@@ -21,6 +21,7 @@
     pkgs.xclip
     pkgs.xlsfonts
     pkgs.xorg.xbacklight
+    pkgs.xorg.xmodmap
   ];
 
   nixpkgs.config.allowUnfree = true;
