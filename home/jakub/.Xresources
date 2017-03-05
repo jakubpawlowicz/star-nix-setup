@@ -1,5 +1,6 @@
 Xft.dpi: 192
 XTerm*background: black
+Xterm*faceName: Terminus Medium:size=8:antialias=false
 XTerm*font: -xos4-terminus-medium-r-normal--26-260-72-72-c-130-iso8859-2
 XTerm*foreground: white
 XTerm*loginShell: true
