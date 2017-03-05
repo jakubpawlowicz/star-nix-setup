@@ -16,6 +16,7 @@
     pkgs.sublime3
     pkgs.terminus_font
     pkgs.unzip
+    pkgs.urlview
     pkgs.usbutils
     pkgs.vim
     pkgs.xclip
