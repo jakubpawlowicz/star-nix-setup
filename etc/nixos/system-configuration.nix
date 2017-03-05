@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  boot.extraModprobeConfig =
+    ''
+      options snd_hda_intel enable=0,1
+    '';
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
