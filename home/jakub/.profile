@@ -23,3 +23,5 @@ function parse_git_branch {
 
 export PS1='\u@\h \[\033[0;36m\]\w \[\033[0;32m\]$(parse_git_branch)\[\033[0m\]$ '
 
+source .~/profile-passwords
+
