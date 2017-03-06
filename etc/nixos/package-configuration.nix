@@ -9,6 +9,7 @@
     pkgs.htop
     pkgs.i3
     pkgs.links
+    pkgs.lsof
     pkgs.mutt
     pkgs.nodejs
     pkgs.openssl_1_1_0
