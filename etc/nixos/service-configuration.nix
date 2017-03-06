@@ -13,6 +13,15 @@
   services.xserver.xkbOptions = "eurosign:e";
   services.xserver.autorun = false;
   services.xserver.windowManager.i3.enable = true;
+  services.xserver.synaptics.additionalOptions =
+    ''
+      Option "HorizScrollDelta" "-111"
+      Option "VertScrollDelta" "-111"
+    '';
+  services.xserver.synaptics.enable = true;
+  services.xserver.synaptics.minSpeed = "1.25";
+  services.xserver.synaptics.palmDetect = true;
+  services.xserver.synaptics.twoFingerScroll = true;
 
   virtualisation.docker.enable = true;
 }
