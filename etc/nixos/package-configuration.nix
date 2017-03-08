@@ -23,6 +23,7 @@
     pkgs.usbutils
     pkgs.vim
     pkgs.xclip
+    pkgs.xlockmore
     pkgs.xlsfonts
     pkgs.xorg.xbacklight
     pkgs.xorg.xmodmap
