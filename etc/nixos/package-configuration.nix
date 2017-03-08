@@ -3,6 +3,7 @@
 {
   environment.systemPackages = [
     pkgs.ansible2
+    pkgs.chromium
     pkgs.dosbox
     pkgs.firefox
     pkgs.gitMinimal
