@@ -16,6 +16,7 @@
     pkgs.mutt
     pkgs.nodejs
     pkgs.openssl_1_1_0
+    pkgs.optipng
     pkgs.python35Packages.docker_compose
     pkgs.sublime3
     pkgs.terminus_font
