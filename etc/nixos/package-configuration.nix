@@ -6,6 +6,7 @@
     pkgs.chromium
     pkgs.dosbox
     pkgs.firefox
+    pkgs.gimp
     pkgs.gitMinimal
     pkgs.gnupg
     pkgs.htop
