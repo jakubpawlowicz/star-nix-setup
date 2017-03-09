@@ -1,2 +1,2 @@
-COMMAND links %s
+COMMAND echo %s | xclip -selection clipboard
 
