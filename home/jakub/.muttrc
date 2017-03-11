@@ -1,3 +1,5 @@
+macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
+
 mailboxes =INBOX
 set certificate_file=$HOME/.mutt/certificates
 set folder="imaps://mail.runbox.com:993/"
