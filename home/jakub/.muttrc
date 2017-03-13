@@ -2,6 +2,7 @@ macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
 
 mailboxes =INBOX
 set certificate_file=$HOME/.mutt/certificates
+set connect_timeout=5
 set folder="imaps://mail.runbox.com:993/"
 set from="contact@jakubpawlowicz.com"
 set header_cache=$HOME/.mutt/cache/headers
