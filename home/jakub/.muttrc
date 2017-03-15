@@ -1,14 +1,14 @@
 macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
 
 mailboxes =INBOX
-set certificate_file=$HOME/.mutt/certificates
+set certificate_file=$HOME/.mutt/contact@jakubpawlowicz.com/certificates
 set connect_timeout=5
 set folder="imaps://mail.runbox.com:993/"
 set from="contact@jakubpawlowicz.com"
-set header_cache=$HOME/.mutt/cache/headers
+set header_cache=$HOME/.mutt/contact@jakubpawlowicz.com/cache/headers
 set imap_user="contact%jakubpawlowicz.com"
 set mail_check=60
-set message_cachedir=$HOME/.mutt/cache/bodies
+set message_cachedir=$HOME/.mutt/contact@jakubpawlowicz.com/cache/bodies
 set postponed="+Drafts"
 set realname="Jakub Pawlowicz"
 set record="+Sent"
@@ -18,5 +18,5 @@ set spoolfile="+INBOX"
 set ssl_force_tls=yes
 set ssl_starttls=yes
 
-source "gpg2 -d $HOME/.mutt/password.gpg |"
+source "gpg2 -d $HOME/.mutt/contact@jakubpawlowicz.com/password.gpg |"
 
