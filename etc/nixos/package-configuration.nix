@@ -11,6 +11,7 @@
     pkgs.gnupg
     pkgs.htop
     pkgs.i3
+    pkgs.ledger
     pkgs.links
     pkgs.lsof
     pkgs.mutt
