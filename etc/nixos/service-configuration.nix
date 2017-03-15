@@ -1,4 +1,6 @@
 {
+  services.dictd.enable = true;
+
   services.dnsmasq.enable = true;
   services.dnsmasq.extraConfig =
     ''
