@@ -5,6 +5,7 @@
     pkgs.ansible2
     pkgs.chromium
     pkgs.dosbox
+    pkgs.exfat
     pkgs.firefox
     pkgs.gimp
     pkgs.gitMinimal
