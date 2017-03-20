@@ -24,4 +24,6 @@
   services.xserver.synaptics.twoFingerScroll = true;
 
   virtualisation.docker.enable = true;
+
+  virtualisation.virtualbox.host.enable = true;
 }
