@@ -1,0 +1,17 @@
+color status red default
+
+mailboxes =INBOX
+set certificate_file=$HOME/.mutt/jakub@goalsmashers.com/certificates
+set folder="imaps://imap.gmail.com:993/"
+set from="jakub@goalsmashers.com"
+set header_cache=$HOME/.mutt/jakub@goalsmashers.com/cache/headers
+set imap_user="jakub@goalsmashers.com"
+set message_cachedir=$HOME/.mutt/jakub@goalsmashers.com/cache/bodies
+set postponed="+Drafts"
+set realname="Jakub Pawlowicz"
+set record="+Sent"
+set smtp_url="smtp://jakub%25goalsmashers.com@smtp.gmail.com:587/"
+set spoolfile="+INBOX"
+
+source "gpg2 -d $HOME/.mutt/jakub@goalsmashers.com/password.gpg |"
+

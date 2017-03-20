@@ -1,22 +1,18 @@
-macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
+folder-hook 'contact@jakubpawlowicz.com' 'source ~/.mutt/contact@jakubpawlowicz.com/muttrc'
+folder-hook 'servers@jakubpawlowicz.com' 'source ~/.mutt/servers@jakubpawlowicz.com/muttrc'
+folder-hook 'jakub@goalsmashers.com' 'source ~/.mutt/jakub@goalsmashers.com/muttrc'
 
-mailboxes =INBOX
-set certificate_file=$HOME/.mutt/contact@jakubpawlowicz.com/certificates
+macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
+macro index <F2> '<sync-mailbox><enter-command>source /home/jakub/.mutt/contact@jakubpawlowicz.com/muttrc<enter><change-folder>!<enter>'
+macro index <F3> '<sync-mailbox><enter-command>source /home/jakub/.mutt/servers@jakubpawlowicz.com/muttrc<enter><change-folder>!<enter>'
+macro index <F4> '<sync-mailbox><enter-command>source /home/jakub/.mutt/jakub@goalsmashers.com/muttrc<enter><change-folder>!<enter>'
+
 set connect_timeout=5
-set folder="imaps://mail.runbox.com:993/"
-set from="contact@jakubpawlowicz.com"
-set header_cache=$HOME/.mutt/contact@jakubpawlowicz.com/cache/headers
-set imap_user="contact%jakubpawlowicz.com"
 set mail_check=60
-set message_cachedir=$HOME/.mutt/contact@jakubpawlowicz.com/cache/bodies
-set postponed="+Drafts"
-set realname="Jakub Pawlowicz"
-set record="+Sent"
-set smtp_url="smtp://contact%25jakubpawlowicz.com@mail.runbox.com:587/"
+set move=no
 set sort=reverse-date-received
-set spoolfile="+INBOX"
 set ssl_force_tls=yes
 set ssl_starttls=yes
 
-source "gpg2 -d $HOME/.mutt/contact@jakubpawlowicz.com/password.gpg |"
+source "$HOME/.mutt/contact@jakubpawlowicz.com/muttrc"
 
