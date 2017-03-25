@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = [
+    pkgs.aalib
     pkgs.ansible2
     pkgs.chromium
     pkgs.dosbox
@@ -15,6 +16,7 @@
     pkgs.ledger
     pkgs.links
     pkgs.lsof
+    pkgs.mplayer
     pkgs.mutt
     pkgs.nodejs
     pkgs.openssl_1_1_0
