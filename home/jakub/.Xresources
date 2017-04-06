@@ -1,6 +1,6 @@
 Xft.dpi: 192
-XTerm*background: black
-XTerm*font: -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso8859-2
-XTerm*foreground: rgb:cc/cc/cc
-XTerm*loginShell: true
+xterm*background: black
+xterm*font: -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso8859-2
+xterm*foreground: rgb:cc/cc/cc
+xterm*loginShell: true
 
