@@ -8,6 +8,7 @@ macro index <F3> '<sync-mailbox><enter-command>source /home/jakub/.mutt/servers@
 macro index <F4> '<sync-mailbox><enter-command>source /home/jakub/.mutt/jakub@goalsmashers.com/muttrc<enter><change-folder>!<enter>'
 
 set connect_timeout=5
+set imap_keepalive=120
 set mail_check=60
 set move=no
 set sort=reverse-date-received
