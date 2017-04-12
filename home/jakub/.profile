@@ -5,6 +5,7 @@ alias dc=docker-compose
 alias dm=docker-machine
 alias g=git
 alias gcm='g co master'
+alias clipboard-copy='xclip -selection clipboard'
 
 export EDITOR=vi
 export GPG_TTY=$(tty)
