@@ -13,7 +13,7 @@
   services.redshift.longitude = "20";
 
   services.xserver.enable = true;
-  services.xserver.layout = "us";
+  services.xserver.layout = "pl";
   services.xserver.xkbOptions = "eurosign:e";
   services.xserver.autorun = false;
   services.xserver.windowManager.i3.enable = true;
