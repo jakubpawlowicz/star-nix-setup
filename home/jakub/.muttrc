@@ -3,6 +3,7 @@ folder-hook 'servers@jakubpawlowicz.com' 'source ~/.mutt/servers@jakubpawlowicz.
 folder-hook 'jakub@goalsmashers.com' 'source ~/.mutt/jakub@goalsmashers.com/muttrc'
 
 macro attach E <save-entry><kill-line>/home/jakub/Downloads/<enter>y<enter>
+macro index S <copy-message><kill-line>=Spam<enter>y<delete-message>
 macro index <F2> '<sync-mailbox><enter-command>source /home/jakub/.mutt/contact@jakubpawlowicz.com/muttrc<enter><change-folder>!<enter>'
 macro index <F3> '<sync-mailbox><enter-command>source /home/jakub/.mutt/servers@jakubpawlowicz.com/muttrc<enter><change-folder>!<enter>'
 macro index <F4> '<sync-mailbox><enter-command>source /home/jakub/.mutt/jakub@goalsmashers.com/muttrc<enter><change-folder>!<enter>'
