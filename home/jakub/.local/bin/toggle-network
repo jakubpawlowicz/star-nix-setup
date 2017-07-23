@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+CHECK=$(systemctl status wpa_supplicant | grep "(running)")
+
+if [ $? -eq 0 ]; then
+  # network is up, let's stop it
+  sudo systemctl stop openvpn-client
+  sudo systemctl stop wpa_supplicant
+else
+  # network is down, let's start it
+  sudo systemctl start wpa_supplicant
+  sudo systemctl start openvpn-client
+fi
+
