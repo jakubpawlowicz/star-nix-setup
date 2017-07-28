@@ -1,15 +1,7 @@
 { pkgs, ... }:
 
 {
-  boot.extraModprobeConfig =
-    ''
-      options snd_hda_intel enable=0,1
-    '';
   boot.kernelPackages = pkgs.linuxPackages_4_19;
-  boot.kernelParams = [
-    "hid_apple.fnmode=0"
-    "nomodeset"
-  ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
