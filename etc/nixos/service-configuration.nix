@@ -1,4 +1,9 @@
 {
+  services.cron.enable = true;
+  services.cron.systemCronJobs = [
+    "@reboot root sleep 10 && echo low > /sys/class/drm/card0/device/power_dpm_force_performance_level"
+  ];
+
   services.dnsmasq.enable = true;
   services.dnsmasq.extraConfig =
     ''

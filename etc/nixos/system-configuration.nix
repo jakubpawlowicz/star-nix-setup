@@ -1,10 +1,7 @@
 { pkgs, ... }:
 
 {
-  boot.extraModprobeConfig =
-    ''
-      options snd_hda_intel enable=0,1
-    '';
+  boot.kernelPackages = pkgs.linuxPackages_4_12;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -17,7 +14,7 @@
 
   i18n.consoleFont = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
 
-  system.stateVersion = "16.09";
+  system.stateVersion = "17.03";
 
   time.timeZone = "Europe/Warsaw";
 }
