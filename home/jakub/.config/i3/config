@@ -33,7 +33,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec /nix/store/wy4n3z18fbd6qxim8b4q0cwyda1cxyg2-dmenu-4.6/bin/dmenu_run
+bindsym $mod+d exec /nix/store/9qsripch0whyv3xyd656rcmkbs9f21d2-dmenu-4.6/bin/dmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -126,7 +126,7 @@ assign [class="^Firefox$"] 5
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command /nix/store/q9bpvfnarp2849z9rp46s4rzv53pvqp2-i3status-2.10/bin/i3status --config ~/.i3status.conf
+	status_command ~/.local/bin/extra-i3status
 }
 
 exec feh --bg-scale ~/Pictures/Grass\ Blades.jpg
