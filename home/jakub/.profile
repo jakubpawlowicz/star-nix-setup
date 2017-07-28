@@ -1,4 +1,4 @@
-alias ansible-playbook='ansible-playbook --vault-password-file=~/.ansible_vault_pass'
+alias ansible-playbook='ansible-playbook --vault-password-file=~/.ansible_vault_pass --inventory-file=~/.l/ansible-bootstrap/hosts'
 alias ansible-vault='ansible-vault --vault-password-file=~/.ansible_vault_pass'
 alias d=docker
 alias dc=docker-compose
