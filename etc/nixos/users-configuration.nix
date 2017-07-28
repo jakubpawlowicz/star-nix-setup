@@ -11,8 +11,8 @@
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl start openvpn-client
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl stop openvpn-client
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl restart openvpn-client
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl start wpa_supplicant
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl stop wpa_supplicant
+      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp10s0 down
+      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp10s0 up
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/cat /sys/kernel/debug/dri/0/radeon_pm_info
     '';
 }
