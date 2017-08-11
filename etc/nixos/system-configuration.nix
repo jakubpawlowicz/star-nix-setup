@@ -2,6 +2,9 @@
 
 {
   boot.kernelPackages = pkgs.linuxPackages_4_12;
+  boot.kernelParams = [
+    "hid_apple.fnmode=0"
+  ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
