@@ -113,7 +113,6 @@
 
   services.xserver.enable = true;
   services.xserver.layout = "pl";
-  services.xserver.autorun = false;
   services.xserver.windowManager.i3.enable = true;
 
   virtualisation.docker.enable = true;
