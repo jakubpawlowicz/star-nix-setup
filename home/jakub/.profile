@@ -6,6 +6,7 @@ alias dm=docker-machine
 alias g=git
 alias gcm='g co master'
 alias clipboard-copy='xclip -selection clipboard'
+alias clipboard-paste='xclip -o -selection clipboard'
 
 export EDITOR=vi
 export GPG_TTY=$(tty)
