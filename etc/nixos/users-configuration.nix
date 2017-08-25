@@ -1,6 +1,7 @@
 {
   users.extraUsers.jakub = {
     isNormalUser = true;
+    home = "/home/jakub";
     extraGroups = ["adbusers" "networkmanager" "vboxusers" "wheel"];
   };
 
