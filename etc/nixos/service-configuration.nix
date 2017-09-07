@@ -115,6 +115,8 @@
   services.xserver.layout = "pl";
   services.xserver.windowManager.i3.enable = true;
 
+  systemd.services.openvpn-client.after = [ "network-online.target" ];
+
   virtualisation.docker.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
