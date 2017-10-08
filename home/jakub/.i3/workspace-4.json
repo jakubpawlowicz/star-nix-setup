@@ -11,13 +11,7 @@
             "border": "normal",
             "current_border_width": 2,
             "floating": "auto_off",
-            "geometry": {
-               "height": 480,
-               "width": 943,
-               "x": 0,
-               "y": 0
-            },
-            "name": "untitled • (clean-css) - Sublime Text",
+            "name": "untitled",
             "percent": 1,
             "swallows": [
                {

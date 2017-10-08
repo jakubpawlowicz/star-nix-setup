@@ -139,6 +139,7 @@ exec xterm -T mutt -e mutt
 exec xterm -T htop -e htop
 exec xterm -T generic
 
+exec i3-msg "workspace 4; append_layout ~/.i3/workspace-4.json"
 exec sublime
 exec firefox
 
