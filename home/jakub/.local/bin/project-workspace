@@ -18,3 +18,5 @@ i3-msg "workspace $WORKSPACE_INDEX; append_layout $WORKSPACE_FILE"
 xterm -T $WORKSPACE_PROJECT_NAME-project -e $SHELL -c "cd $WORKSPACE_PATH; $SHELL -l" &
 xterm -T $WORKSPACE_PROJECT_NAME-docker-shell -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose run app bash; $SHELL -l" &
 xterm -T $WORKSPACE_PROJECT_NAME-docker-app -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose up; $SHELL -l" &
+
+sublime $WORKSPACE_PATH &
