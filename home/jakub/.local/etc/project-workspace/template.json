@@ -1,0 +1,42 @@
+{
+  "border": "normal",
+  "floating": "auto_off",
+  "layout": "splith",
+  "percent": null,
+  "type": "con",
+  "nodes": [
+    {
+      "percent": 0.333333333333333,
+      "name": "xterm",
+      "type": "con",
+      "swallows": [
+        {
+          "class": "^XTerm$",
+          "title": "^#NAME-project$"
+        }
+      ]
+    },
+    {
+      "percent": 0.333333333333333,
+      "name": "xterm",
+      "type": "con",
+      "swallows": [
+        {
+          "class": "^XTerm$",
+          "title": "^#NAME-docker-shell$"
+        }
+      ]
+    },
+    {
+      "percent": 0.333333333333333,
+      "name": "xterm",
+      "type": "con",
+      "swallows": [
+        {
+          "class": "^XTerm$",
+          "title": "^#NAME-docker-app$"
+        }
+      ]
+    }
+  ]
+}

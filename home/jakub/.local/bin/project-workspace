@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -o errexit -o nounset
+
+WORKSPACE_INDEX=$1
+WORKSPACE_PATH=$2
+
+SCRIPT_PATH=$(realpath $0)
+WORKSPACE_TEMPLATE_FILE=$(dirname $SCRIPT_PATH)/../etc/$(basename $SCRIPT_PATH)/template.json
+WORKSPACE_PROJECT_NAME=$(basename $WORKSPACE_PATH)
+WORKSPACE_FILE="/tmp/project-workspace-$WORKSPACE_PROJECT_NAME"
+
+cp $WORKSPACE_TEMPLATE_FILE $WORKSPACE_FILE
+sed -i s/#NAME/$WORKSPACE_PROJECT_NAME/g $WORKSPACE_FILE
+
+i3-msg "workspace $WORKSPACE_INDEX; append_layout $WORKSPACE_FILE"
+
+xterm -T $WORKSPACE_PROJECT_NAME-project -e $SHELL -c "cd $WORKSPACE_PATH; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-docker-shell -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose run app bash; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-docker-app -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose up; $SHELL -l" &
