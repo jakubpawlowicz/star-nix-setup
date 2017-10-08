@@ -7,6 +7,7 @@ alias g=git
 alias gcm='g co master'
 alias clipboard-copy='xclip -selection clipboard'
 alias clipboard-paste='xclip -o -selection clipboard'
+alias pw='~/.local/bin/project-workspace'
 
 export EDITOR=vi
 export GPG_TTY=$(tty)
