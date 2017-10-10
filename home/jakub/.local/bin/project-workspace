@@ -2,8 +2,8 @@
 
 set -o errexit -o nounset
 
-WORKSPACE_INDEX=$1
-WORKSPACE_PATH=$2
+WORKSPACE_PATH=$1
+WORKSPACE_INDEX=$2
 
 SCRIPT_PATH=$(realpath $0)
 WORKSPACE_TEMPLATE_FILE=$(dirname $SCRIPT_PATH)/../etc/$(basename $SCRIPT_PATH)/template.json
