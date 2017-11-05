@@ -5,7 +5,7 @@
     ''
       options snd_hda_intel enable=0,1
     '';
-  boot.kernelPackages = pkgs.linuxPackages_4_12;
+  boot.kernelPackages = pkgs.linuxPackages_4_13;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
   ];
