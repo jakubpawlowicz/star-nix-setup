@@ -49,3 +49,5 @@
 	sh = show
 	shs = show --stat
 	st = stash
+[core]
+	excludesfile = ~/.gitignore
