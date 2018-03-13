@@ -117,7 +117,5 @@
 
   systemd.services.openvpn-client.after = [ "network-online.target" ];
 
-  virtualisation.docker.enable = true;
-
   virtualisation.virtualbox.host.enable = true;
 }

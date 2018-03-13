@@ -1,8 +1,5 @@
 alias ansible-playbook='ansible-playbook --vault-password-file=~/.ansible_vault_pass --inventory-file=~/.l/ansible-bootstrap/hosts'
 alias ansible-vault='ansible-vault --vault-password-file=~/.ansible_vault_pass'
-alias d=docker
-alias dc=docker-compose
-alias dm=docker-machine
 alias g=git
 alias gcm='g co master'
 alias clipboard-copy='xclip -selection clipboard'

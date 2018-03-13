@@ -1,7 +1,7 @@
 {
   users.extraUsers.jakub = {
     isNormalUser = true;
-    extraGroups = ["docker" "networkmanager" "vboxusers" "wheel"];
+    extraGroups = ["networkmanager" "vboxusers" "wheel"];
   };
 
   security.sudo.extraConfig =
