@@ -23,7 +23,7 @@
       "swallows": [
         {
           "class": "^XTerm$",
-          "title": "^#NAME-docker-shell$"
+          "title": "^#NAME-shell$"
         }
       ]
     },
@@ -34,7 +34,7 @@
       "swallows": [
         {
           "class": "^XTerm$",
-          "title": "^#NAME-docker-app$"
+          "title": "^#NAME-app$"
         }
       ]
     }

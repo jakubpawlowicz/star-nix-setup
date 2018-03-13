@@ -16,7 +16,7 @@ sed -i s/#NAME/$WORKSPACE_PROJECT_NAME/g $WORKSPACE_FILE
 i3-msg "workspace $WORKSPACE_INDEX; append_layout $WORKSPACE_FILE"
 
 xterm -T $WORKSPACE_PROJECT_NAME-project -e $SHELL -c "cd $WORKSPACE_PATH; $SHELL -l" &
-xterm -T $WORKSPACE_PROJECT_NAME-docker-shell -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose run app bash; $SHELL -l" &
-xterm -T $WORKSPACE_PROJECT_NAME-docker-app -e $SHELL -c "cd $WORKSPACE_PATH; docker-compose up; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-shell -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell shell.nix ; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-app -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell --run ./.app.sh shell.nix; $SHELL -l" &
 
 sublime $WORKSPACE_PATH &
