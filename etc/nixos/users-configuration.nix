@@ -2,7 +2,7 @@
   users.extraUsers.jakub = {
     isNormalUser = true;
     home = "/home/jakub";
-    extraGroups = ["adbusers" "networkmanager" "vboxusers" "wheel"];
+    extraGroups = ["networkmanager" "vboxusers" "wheel"];
   };
 
   security.sudo.extraConfig =
