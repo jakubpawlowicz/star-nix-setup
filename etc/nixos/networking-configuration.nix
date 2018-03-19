@@ -7,5 +7,6 @@
   ];
   networking.enableIPv6 = false;
   networking.hostName = "nixos-mobile";
+  networking.wireless.enable = true;
 }
 
