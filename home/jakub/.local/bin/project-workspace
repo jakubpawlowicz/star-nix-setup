@@ -4,6 +4,7 @@ set -o errexit -o nounset
 
 WORKSPACE_PATH=$1
 WORKSPACE_INDEX=$2
+WORKSPACE_MODE=${3:-offline}
 
 SCRIPT_PATH=$(realpath $0)
 WORKSPACE_TEMPLATE_FILE=$(dirname $SCRIPT_PATH)/../etc/$(basename $SCRIPT_PATH)/template.json
@@ -16,7 +17,7 @@ sed -i s/#NAME/$WORKSPACE_PROJECT_NAME/g $WORKSPACE_FILE
 i3-msg "workspace $WORKSPACE_INDEX; append_layout $WORKSPACE_FILE"
 
 xterm -T $WORKSPACE_PROJECT_NAME-project -e $SHELL -c "cd $WORKSPACE_PATH; $SHELL -l" &
-xterm -T $WORKSPACE_PROJECT_NAME-shell -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell shell.nix ; $SHELL -l" &
-xterm -T $WORKSPACE_PROJECT_NAME-app -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell --run ./.app.sh shell.nix; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-shell -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell shell-$WORKSPACE_MODE.nix ; $SHELL -l" &
+xterm -T $WORKSPACE_PROJECT_NAME-app -e $SHELL -c "cd $WORKSPACE_PATH; nix-shell --command './bin/start; tail -f log/dev.log' shell-$WORKSPACE_MODE.nix; $SHELL -l" &
 
 sublime $WORKSPACE_PATH &
