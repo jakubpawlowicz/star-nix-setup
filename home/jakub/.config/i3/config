@@ -130,7 +130,7 @@ assign [class="^Firefox$"] 5
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	status_command ~/.local/bin/extra-i3status
+	status_command /nix/store/541r56q93cwfbayvcsjcbxjilsx7glyh-i3status-2.11/bin/i3status --config ~/.i3status.conf
 }
 
 exec feh --bg-scale ~/Pictures/Grass\ Blades.jpg
