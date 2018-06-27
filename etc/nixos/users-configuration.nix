@@ -14,6 +14,5 @@
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl suspend
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp37s0 down
       %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp37s0 up
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/cat /sys/kernel/debug/dri/0/radeon_pm_info
     '';
 }
