@@ -41,7 +41,7 @@
             "swallows": [
                {
                  "class": "^XTerm$",
-                 "title": "^cmus$"
+                 "title": "^cmus"
                }
             ],
             "type": "con"
