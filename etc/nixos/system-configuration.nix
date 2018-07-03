@@ -5,9 +5,10 @@
     ''
       options snd_hda_intel enable=0,1
     '';
-  boot.kernelPackages = pkgs.linuxPackages_4_15;
+  boot.kernelPackages = pkgs.linuxPackages_4_16;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
+    "nomodeset"
   ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
