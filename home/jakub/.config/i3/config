@@ -137,12 +137,15 @@ exec feh --bg-scale ~/Pictures/Grass\ Blades.jpg
 exec xmodmap ~/.Xmodmap
 
 exec i3-msg "workspace 1; append_layout ~/.i3/workspace-1.json"
+exec i3-msg "workspace 4; append_layout ~/.i3/workspace-4.json"
+
+exec sleep 1
+
 exec xterm -T mutt -e mutt
 exec xterm -T htop -e htop
 exec xterm -T cmus -e cmus
 exec xterm -T generic
 
-exec i3-msg "workspace 4; append_layout ~/.i3/workspace-4.json"
 exec sublime
 exec firefox
 
