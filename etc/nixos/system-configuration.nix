@@ -5,7 +5,6 @@
     ''
       options snd_hda_intel enable=0,1
     '';
-  boot.kernelPackages = pkgs.linuxPackages_4_15;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
   ];
@@ -21,7 +20,7 @@
 
   i18n.consoleFont = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
 
-  system.stateVersion = "17.03";
+  system.stateVersion = "18.03";
 
   time.timeZone = "Europe/Warsaw";
 }
