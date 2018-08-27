@@ -4,11 +4,9 @@ CHECK=$(ifconfig enp37s0 | grep inet)
 
 if [ $? -eq 0 ]; then
   # network is up, let's stop it
-  sudo systemctl stop openvpn-client
   sudo ifconfig enp37s0 down
 else
   # network is down, let's start it
   sudo ifconfig enp37s0 up
-  sudo systemctl start openvpn-client
 fi
 

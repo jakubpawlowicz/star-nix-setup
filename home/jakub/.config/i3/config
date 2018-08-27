@@ -121,8 +121,6 @@ bindsym $mod+Shift+p exec "xlock -mode blank"
 bindsym $mod+Shift+i exec "~/.local/bin/lock-and-suspend"
 # toggle network on/off
 bindsym $mod+Shift+n exec "~/.local/bin/toggle-network"
-# toggle vpn on/off
-bindsym $mod+Shift+v exec "~/.local/bin/toggle-vpn"
 
 assign [class="^Sublime$"] 4
 assign [class="^Firefox$"] 5
