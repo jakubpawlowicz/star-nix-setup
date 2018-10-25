@@ -18,8 +18,6 @@
     terminus_font
   ];
 
-  hardware.bluetooth.enable = true;
-
   i18n.consoleFont = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
 
   system.stateVersion = "18.03";
