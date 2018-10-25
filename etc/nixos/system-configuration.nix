@@ -5,7 +5,7 @@
     ''
       options snd_hda_intel enable=0,1
     '';
-  boot.kernelPackages = pkgs.linuxPackages_4_16;
+  boot.kernelPackages = pkgs.linuxPackages_4_17;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
     "nomodeset"
