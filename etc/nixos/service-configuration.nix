@@ -16,6 +16,7 @@
 
   services.xserver.enable = true;
   services.xserver.layout = "pl";
+  services.xserver.windowManager.default = "i3";
   services.xserver.windowManager.i3.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
