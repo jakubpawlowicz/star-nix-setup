@@ -5,15 +5,17 @@
 		".git",
 		"_build",
 		"deps",
+		"mnesia",
 		"node_modules"
 	],
-	"font_size": 16,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"tab_size": 2,
-	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"theme": "Adaptive.sublime-theme",
+	"update_check": false
 }
