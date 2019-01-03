@@ -15,6 +15,19 @@
   services.redshift.longitude = "20";
 
   services.xserver.enable = true;
+  services.xserver.desktopManager.xterm.enable = false;
+  services.xserver.displayManager.lightdm.greeters.mini.enable = true;
+  services.xserver.displayManager.lightdm.greeters.mini.extraConfig =
+    ''
+      [greeter]
+      show-input-cursor = false
+      show-password-label = false
+      [greeter-theme]
+      background-color = "#1b1d1e"
+      background-image = ""
+      window-color = "#d0d0d0"
+    '';
+  services.xserver.displayManager.lightdm.greeters.mini.user = "jakub";
   services.xserver.layout = "pl";
   services.xserver.windowManager.default = "i3";
   services.xserver.windowManager.i3.enable = true;
