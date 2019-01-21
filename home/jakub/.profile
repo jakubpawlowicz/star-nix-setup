@@ -1,10 +1,10 @@
-alias ansible-playbook='ansible-playbook --vault-password-file=~/.ansible_vault_pass --inventory-file=~/.l/ansible-bootstrap/hosts'
-alias ansible-vault='ansible-vault --vault-password-file=~/.ansible_vault_pass'
-alias g=git
-alias gcm='g co master'
 alias clipboard-copy='xclip -selection clipboard'
+alias clipboard-move='xclip -o clipboard | xclip -selection clipboard'
 alias clipboard-paste='xclip -o -selection clipboard'
-alias pw='~/.local/bin/project-workspace'
+alias g='git'
+alias nx='nix-shell'
+alias nxf='nix-shell shell-offline.nix'
+alias nxn='nix-shell shell-online.nix'
 
 export EDITOR=vi
 export GPG_TTY=$(tty)

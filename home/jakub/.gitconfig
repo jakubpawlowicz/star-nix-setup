@@ -14,6 +14,7 @@
 	c = commit
 	ca = commit --amend
 	cf = !sh -c \"git commit --fixup $@\"
+	cm = checkout master
 	co = checkout
 	col = !sh -c \"git checkout -b $@\"
 	cor = !sh -c \"git checkout --track -b $@ origin/$@\"
