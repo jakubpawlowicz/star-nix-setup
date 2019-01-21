@@ -9,9 +9,12 @@ alias nxn='nix-shell shell-online.nix'
 export EDITOR=vi
 export GPG_TTY=$(tty)
 
-if [ -z "$SSH_AUTH_SOCK" ]; then
-  eval $(ssh-agent -s) > /dev/null
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval `ssh-agent`
+  ln -fs "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
