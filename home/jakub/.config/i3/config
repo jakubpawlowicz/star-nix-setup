@@ -122,28 +122,22 @@ bindsym $mod+Shift+i exec "~/.local/bin/lock-and-suspend"
 # toggle network on/off
 bindsym $mod+Shift+n exec "~/.local/bin/toggle-network"
 
-assign [class="^Sublime$"] 4
-assign [class="^Firefox$"] 5
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	status_command /nix/store/qw7lwp4ar361lplycbby9bcr4mpn53rg-i3status-2.12/bin/i3status --config ~/.i3status.conf
+       status_command /nix/store/qw7lwp4ar361lplycbby9bcr4mpn53rg-i3status-2.12/bin/i3status --config ~/.i3status.conf
 }
 
 exec feh --bg-scale ~/Pictures/Grass\ Blades.jpg
 exec xmodmap ~/.Xmodmap
 
-exec i3-msg "workspace 1; append_layout ~/.i3/workspace-1.json"
-exec i3-msg "workspace 4; append_layout ~/.i3/workspace-4.json"
-
-exec sleep 1
+assign [title="^mutt$"] 1
+assign [title="^htop$"] 1
+assign [title="^cmus$"] 2
+assign [class="^Chromium\-browser$"] 3
+assign [class="^Firefox$"] 3
 
 exec xterm -T mutt -e mutt
 exec xterm -T htop -e htop
 exec xterm -T cmus -e cmus
-exec xterm -T generic
-
-exec sublime
 exec firefox
-
