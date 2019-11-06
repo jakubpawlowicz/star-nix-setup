@@ -11,8 +11,6 @@
   services.dnsmasq.servers = [ "8.8.8.8" "4.4.4.4" ];
 
   services.redshift.enable = true;
-  services.redshift.latitude = "50";
-  services.redshift.longitude = "20";
 
   services.xserver.enable = true;
   services.xserver.desktopManager.xterm.enable = false;

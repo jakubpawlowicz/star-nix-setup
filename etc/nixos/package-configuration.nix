@@ -13,7 +13,7 @@
     pkgs.lm_sensors
     pkgs.lsof
     pkgs.mutt
-    pkgs.openssl_1_1_0
+    pkgs.openssl
     pkgs.terminus_font
     pkgs.unzip
     pkgs.urlview
@@ -25,4 +25,6 @@
     pkgs.xorg.xbacklight
     pkgs.xorg.xmodmap
   ];
+
+  
 }
