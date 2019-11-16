@@ -1,10 +1,8 @@
-alias clipboard-copy='xclip -selection clipboard'
+alias clipboard-copy='wl-copy'
 alias clipboard-move='xclip -o clipboard | xclip -selection clipboard'
-alias clipboard-paste='xclip -o -selection clipboard'
+alias clipboard-paste='wl-paste'
 alias g='git'
 alias nx='nix-shell'
-alias nxf='nix-shell shell-offline.nix'
-alias nxn='nix-shell shell-online.nix'
 
 export EDITOR=vi
 export GPG_TTY=$(tty)

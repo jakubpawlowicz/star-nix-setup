@@ -1,16 +1,17 @@
-{
-  users.extraUsers.jakub = {
-    isNormalUser = true;
-    home = "/home/jakub";
-    extraGroups = ["networkmanager" "vboxusers" "wheel"];
-  };
+{ pkgs, ... }:
 
-  security.sudo.extraConfig =
-    ''
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl start display-manager
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl restart display-manager
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/systemctl suspend
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp37s0 down
-      %wheel ALL=NOPASSWD: /run/current-system/sw/bin/ifconfig enp37s0 up
-    '';
+{
+  users.users.jakub.isNormalUser = true;
+  users.users.jakub.home = "/home/jakub";
+  users.users.jakub.extraGroups = [
+    "networkmanager"
+    "wheel"
+  ];
+  users.users.jakub.packages = [
+    pkgs.alacritty
+    pkgs.firefox-wayland
+    pkgs.sublime3
+    pkgs.wl-clipboard
+  ];
 }
+

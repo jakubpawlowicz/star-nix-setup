@@ -1,2 +1,2 @@
-COMMAND echo %s | xclip -selection clipboard
+COMMAND echo %s | wl-copy
 
