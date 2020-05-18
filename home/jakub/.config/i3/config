@@ -131,13 +131,11 @@ bar {
 exec feh --bg-scale ~/Pictures/Grass\ Blades.jpg
 exec xmodmap ~/.Xmodmap
 
-assign [title="^mutt$"] 1
 assign [title="^htop$"] 1
 assign [title="^cmus$"] 2
 assign [class="^Chromium\-browser$"] 3
 assign [class="^Firefox$"] 3
 
-exec xterm -T mutt -e mutt
 exec xterm -T htop -e htop
 exec xterm -T cmus -e cmus
 exec firefox
