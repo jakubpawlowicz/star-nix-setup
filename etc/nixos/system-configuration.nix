@@ -5,6 +5,9 @@
     ''
       options snd_hda_intel enable=0,1
     '';
+  boot.kernelModules = [
+    "kvm-amd"
+  ];
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
@@ -22,6 +25,10 @@
 
   location.latitude = 50.0;
   location.longitude = 20.0;
+
+  nix.systemFeatures = [
+    "kvm"
+  ];
 
   system.stateVersion = "19.03";
 
