@@ -13,6 +13,7 @@
     pkgs.lm_sensors
     pkgs.lsof
     pkgs.mutt
+    pkgs.pinentry
     pkgs.openssl
     pkgs.terminus_font
     pkgs.unzip
