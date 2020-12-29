@@ -55,5 +55,6 @@
   services.xserver.layout = "pl";
   services.xserver.windowManager.i3.enable = true;
 
-  virtualisation.virtualbox.host.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.qemuPackage = pkgs.qemu_kvm;
 }
