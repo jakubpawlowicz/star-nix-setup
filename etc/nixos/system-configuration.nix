@@ -16,12 +16,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  console.font = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
+
   fonts.enableFontDir = true;
   fonts.fonts = with pkgs; [
     terminus_font
   ];
-
-  i18n.consoleFont = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
 
   location.latitude = 50.0;
   location.longitude = 20.0;
