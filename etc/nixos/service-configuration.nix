@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   services.cron.enable = true;
 
@@ -17,23 +15,6 @@
     "2606:4700:4700::1111"
     "2606:4700:4700::1001"
   ];
-
-  services.postgresql.enable = true;
-  services.postgresql.ensureDatabases = [ "discourse_development" "discourse_test" ];
-  services.postgresql.ensureUsers = [
-    {
-      name = "jakub";
-      ensurePermissions = {
-        "ALL TABLES IN SCHEMA public" = "ALL PRIVILEGES";
-      };
-    }
-  ];
-  services.postgresql.initialScript = pkgs.writeText "postgresql-initialScript" ''
-    ALTER USER jakub WITH SUPERUSER;
-    ALTER USER jakub CREATEDB;
-  '';
-
-  services.redis.enable = true;
 
   services.redshift.enable = true;
 
@@ -54,7 +35,4 @@
   services.xserver.displayManager.lightdm.greeters.mini.user = "jakub";
   services.xserver.layout = "pl";
   services.xserver.windowManager.i3.enable = true;
-
-  virtualisation.libvirtd.enable = true;
-  virtualisation.libvirtd.qemuPackage = pkgs.qemu_kvm;
 }
