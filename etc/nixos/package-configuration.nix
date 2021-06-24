@@ -7,8 +7,6 @@
     pkgs.gitMinimal
     pkgs.gnupg
     pkgs.htop
-    pkgs.i3
-    pkgs.i3status
     pkgs.links
     pkgs.lm_sensors
     pkgs.lsof
@@ -20,12 +18,5 @@
     pkgs.urlview
     pkgs.usbutils
     pkgs.vim
-    pkgs.xclip
-    pkgs.xlockmore
-    pkgs.xlsfonts
-    pkgs.xorg.xbacklight
-    pkgs.xorg.xmodmap
-  ];
-
-  
+  ]; 
 }

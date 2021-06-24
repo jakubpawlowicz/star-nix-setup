@@ -1,7 +1,14 @@
+{ pkgs, ... }:
+
 {
   users.extraUsers.jakub = {
     isNormalUser = true;
     extraGroups = ["adbusers" "networkmanager" "vboxusers" "wheel"];
+    packages = [
+      pkgs.chromium
+      pkgs.firefox-wayland
+      pkgs.wl-clipboard
+    ];
   };
 
   security.sudo.extraConfig =
