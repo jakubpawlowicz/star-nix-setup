@@ -18,7 +18,7 @@
 
   console.font = "${pkgs.terminus_font}/share/consolefonts/ter-128n.psf.gz";
 
-  fonts.enableFontDir = true;
+  fonts.fontDir.enable = true;
   fonts.fonts = with pkgs; [
     terminus_font
   ];
