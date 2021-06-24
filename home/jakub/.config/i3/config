@@ -109,6 +109,13 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+bindsym $mod+Control+Shift+4 exec "~/.local/bin/swap-workspace 4"
+bindsym $mod+Control+Shift+5 exec "~/.local/bin/swap-workspace 5"
+bindsym $mod+Control+Shift+6 exec "~/.local/bin/swap-workspace 6"
+bindsym $mod+Control+Shift+7 exec "~/.local/bin/swap-workspace 7"
+bindsym $mod+Control+Shift+8 exec "~/.local/bin/swap-workspace 8"
+bindsym $mod+Control+Shift+9 exec "~/.local/bin/swap-workspace 9"
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

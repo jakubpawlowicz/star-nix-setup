@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -o errexit -o nounset
+
+LEFT_WORKSPACE=$1
+RIGHT_WORKSPACE=$(nix-shell -p jq --run "i3-msg -t get_workspaces | jq '.[] | select(.focused==true).name' | cut -d '\"' -f2")
+TEMP_WORKSPACE=99
+
+i3-msg "rename workspace $LEFT_WORKSPACE to $TEMP_WORKSPACE; rename workspace $RIGHT_WORKSPACE to $LEFT_WORKSPACE; rename workspace $TEMP_WORKSPACE to $RIGHT_WORKSPACE"
