@@ -16,6 +16,6 @@
     fast_reauth=1
     p2p_disabled=1
   '';
-  networking.wireless.networks."Fuuulacze".pskRaw = "0475a560cc49747317b46c687b7a299fd76cd9b8806e94c0a3bf6be406699409";
+  networking.wireless.networks."Fulacze".pskRaw = "1a51fc348192d9200889fd27cdb4cb5e57fad0ea1095d89bd7cabefed6867814";
 }
 
