@@ -1,4 +1,11 @@
 {
+  networking.firewall.allowedTCPPortRanges = [
+    {
+      from = 4000;
+      to = 4200;
+    }
+  ];
+
   networking.hostName = "nixos";
 
   networking.wireless.enable = true;
