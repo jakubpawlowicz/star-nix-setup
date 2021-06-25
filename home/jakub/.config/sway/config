@@ -109,7 +109,7 @@ bindsym $mod+Shift+p exec 'swaylock -c 000000'
 
 bar {
   position bottom
-  status_command while echo '$(df / | tail -n 1 | cut -d " " -f 8-9) \| $(df /home | tail -n 1 | cut -d " " -f 7-8) \| $(date "+%F")'; do sleep 30; done
+  status_command while echo '$(df "/" --output=target,pcent | tail -n 1) \| $(df "/home" --output=target,pcent | tail -n 1) \| $(date "+%F")'; do sleep 1; done
 }
 
 input type:keyboard {
