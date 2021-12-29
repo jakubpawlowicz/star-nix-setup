@@ -7,6 +7,8 @@
     packages = [
       pkgs.chromium
       pkgs.firefox-wayland
+      pkgs.gimp
+      pkgs.jq
       pkgs.wl-clipboard
     ];
   };
