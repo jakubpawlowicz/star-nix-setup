@@ -9,6 +9,8 @@
       pkgs.firefox-wayland
       pkgs.gimp
       pkgs.jq
+      pkgs.libreoffice
+      pkgs.signal-desktop
       pkgs.wl-clipboard
     ];
   };
