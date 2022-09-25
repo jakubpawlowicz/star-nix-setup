@@ -107,14 +107,21 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway
 # lock screen
 bindsym $mod+Shift+p exec 'swaylock -c 000000'
 
+# switch to Polish layout
+bindsym $mod+Shift+n exec swaymsg input type:keyboard xkb_switch_layout 0
+
+# switch to Czech layout
+bindsym $mod+Shift+m exec swaymsg input type:keyboard xkb_switch_layout 1
+
 bar {
   position bottom
   status_command while echo '$(df "/" --output=target,pcent | tail -n 1) \| $(df "/home" --output=target,pcent | tail -n 1) \| $(date "+%F")'; do sleep 1; done
 }
 
 input type:keyboard {
-  xkb_layout pl
-  xkb_options caps:super
+  xkb_layout pl,cz
+  xkb_options caps:super,
+  xkb_variant ,coder
 }
 
 output * background ~/Pictures/grass-blades.jpg fill
