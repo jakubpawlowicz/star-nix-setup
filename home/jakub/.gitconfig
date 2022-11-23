@@ -26,6 +26,7 @@
 	dc = diff --cached
 	ds = diff --stat
 	dsc = diff --stat --cached
+        dcc = diff --cached --word-diff=color --word-diff-regex=.
 	fpr = !sh -c \"git fetch origin pull/$@/head:$@-pr\"
 	l = log
 	lf = log --follow
