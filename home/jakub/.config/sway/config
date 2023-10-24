@@ -115,7 +115,7 @@ bindsym $mod+Shift+m exec swaymsg input type:keyboard xkb_switch_layout 1
 
 bar {
   position bottom
-  status_command while echo '$(df "/" --output=target,pcent | tail -n 1) \| $(df "/home" --output=target,pcent | tail -n 1) \| $(date "+%F")'; do sleep 1; done
+  status_command while echo '$(df "/" --output=target,pcent | tail -n 1) \| $(df "/home" --output=target,pcent | tail -n 1) \| $(sensors | grep CPUTIN | awk \'{print $2}\') \| $(date "+%F")'; do sleep 1; done
 }
 
 input type:keyboard {
