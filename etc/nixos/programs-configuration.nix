@@ -11,4 +11,5 @@
     pkgs.swayidle
     pkgs.swaylock
   ];
+  programs.sway.wrapperFeatures.gtk = true;
 }
