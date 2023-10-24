@@ -1,7 +1,7 @@
 {
   hardware.cpu.amd.updateMicrocode = true;
 
-  nix.maxJobs = 8;
+  nix.settings.max-jobs = 8;
 
   sound.enable = true;
 }
