@@ -1,4 +1,5 @@
 alias chrome='rm .config/chromium/Default/Prefer*; chromium --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias e='nix-shell -p elixir_ls -p helix --run "hx ."'
 alias g='git'
 alias nx='nix-shell'
 alias signal='GDK_BACKEND=wayland nohup signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland &'
