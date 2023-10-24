@@ -25,7 +25,11 @@
   location.latitude = 50.0;
   location.longitude = 20.0;
 
-  nix.systemFeatures = [
+  nix.settings.experimental-features = [
+    "flakes"
+    "nix-command"
+  ];
+  nix.settings.system-features = [
     "kvm"
   ];
 
