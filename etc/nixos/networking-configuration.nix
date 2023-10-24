@@ -17,6 +17,6 @@
     p2p_disabled=1
   '';
   networking.wireless.interfaces = [ "wlp36s0" ];
-  networking.wireless.networks."Fulacze".pskRaw = "1a51fc348192d9200889fd27cdb4cb5e57fad0ea1095d89bd7cabefed6867814";
+  networking.wireless.networks."WoofWoofWoof".pskRaw = "672cb89044a4fd409ccc8c98b9cf16ae02a32b6da9b08bba5df99b79402a84f9";
 }
 
