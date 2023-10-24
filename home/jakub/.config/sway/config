@@ -130,8 +130,10 @@ output * scale 2
 assign [title="^htop$"] 1
 assign [title="^cmus$"] 2
 assign [app_id="^firefox$"] 3
+assign [app_id="signal"] 10
 
 exec alacritty -t htop -e htop
 exec alacritty -t cmus -e cmus
 exec firefox
 
+for_window [app_id="signal"] floating enable
