@@ -30,6 +30,7 @@
     "nix-command"
   ];
   nix.settings.system-features = [
+    "big-parallel"
     "kvm"
   ];
 
