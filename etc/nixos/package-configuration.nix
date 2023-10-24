@@ -7,7 +7,7 @@
     pkgs.gitMinimal
     pkgs.gnupg
     pkgs.htop
-    pkgs.links
+    pkgs.links2
     pkgs.lm_sensors
     pkgs.lsof
     pkgs.mutt
