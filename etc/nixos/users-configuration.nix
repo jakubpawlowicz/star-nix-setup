@@ -7,6 +7,7 @@
     packages = [
       pkgs.chromium
       pkgs.firefox-wayland
+      pkgs.helix
       pkgs.jq
       pkgs.libreoffice
       pkgs.signal-desktop
