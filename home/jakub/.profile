@@ -4,7 +4,7 @@ alias g='git'
 alias nx='nix-shell'
 alias signal='GDK_BACKEND=wayland nohup signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland &'
 
-export EDITOR=vi
+export EDITOR=hx
 export GPG_TTY=$(tty)
 
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
