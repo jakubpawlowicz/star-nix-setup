@@ -13,6 +13,7 @@
     pkgs.mutt
     pkgs.pinentry
     pkgs.openssl
+    pkgs.sof-firmware
     pkgs.terminus_font
     pkgs.unzip
     pkgs.urlview

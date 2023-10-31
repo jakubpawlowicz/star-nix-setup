@@ -1,10 +1,6 @@
 { pkgs, ... }:
 
 {
-  boot.extraModprobeConfig =
-    ''
-      options snd_hda_intel enable=0,1
-    '';
   boot.kernelModules = [
     "kvm-amd"
   ];
