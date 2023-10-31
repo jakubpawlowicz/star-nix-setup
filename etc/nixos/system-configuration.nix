@@ -7,6 +7,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [
     "hid_apple.fnmode=0"
+    "amd_pstate=passive"
   ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
