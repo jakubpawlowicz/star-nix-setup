@@ -16,8 +16,7 @@
     pkgs.sof-firmware
     pkgs.terminus_font
     pkgs.unzip
-    pkgs.urlview
     pkgs.usbutils
     pkgs.vim
-  ]; 
+  ];
 }
