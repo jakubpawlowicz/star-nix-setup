@@ -20,5 +20,26 @@
   services.openssh.ports = [ 2178 ];
   services.openssh.settings.PasswordAuthentication = false;
   services.openssh.settings.PermitRootLogin = "no";
+
+  services.samba.enable = true;
+  services.samba.openFirewall = true;
+  services.samba.securityType = "user";
+  services.samba.extraConfig = ''
+    workgroup = WORKGROUP
+    server string = kuba
+    netbios name = kuba
+    security = user
+    hosts allow = 192.168.1. 127.0.0.1 localhost
+    hosts deny = 0.0.0.0/0
+    guest account = nobody
+    map to guest = bad user
+    use sendfile = yes
+  '';
+  services.samba.shares.movies = {
+    path = "/mnt/shares";
+    browseable = "yes";
+    "read only" = "yes";
+    "guest ok" = "yes";
+  };
 }
 
