@@ -2,7 +2,7 @@
   networking.firewall.allowedTCPPortRanges = [
     {
       from = 4000;
-      to = 4200;
+      to = 4300;
     }
   ];
 
