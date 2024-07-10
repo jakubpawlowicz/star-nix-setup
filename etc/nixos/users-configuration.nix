@@ -14,6 +14,9 @@
       pkgs.wl-clipboard
     ];
   };
+  users.extraUsers.jakub.openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH3Io58i8a6cRRvf9TtMHgRJe4rcIuOAwcbG52sJCAt2 jakub@nixos-mobile"
+  ];
 
   security.sudo.extraConfig =
     ''

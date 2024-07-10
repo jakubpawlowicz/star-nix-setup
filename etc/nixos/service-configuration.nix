@@ -15,5 +15,10 @@
     "2606:4700:4700::1111"
     "2606:4700:4700::1001"
   ];
+
+  services.openssh.enable = true;
+  services.openssh.ports = [ 2178 ];
+  services.openssh.settings.PasswordAuthentication = false;
+  services.openssh.settings.PermitRootLogin = "no";
 }
 
